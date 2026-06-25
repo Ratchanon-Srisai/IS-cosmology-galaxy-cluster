@@ -1,0 +1,12 @@
+name: cosmo-cluster
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12.3
+  - pyccl
+  - numpy
+  - scipy
+  - matplotlib
+  - jupyterlab
+  - ipykernel
