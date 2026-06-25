@@ -36,53 +36,58 @@ The following effects are not included:
 
 ## Requirements
 This project was developed using:
-- `pyccl` 
-- `numpy`
+- `pyccl (3.2.1)` 
+- `numpy (2.4.0)`
 - `scipy`
 - `matplotlib`
+
 The full analysis was tested under:
 - `Ubuntu (WSL2)`
 - `Python 3.12.3` 
 
 ## Getting Started
-**⚠️ Important Note for Windows Users:**
-`pyccl` relies on C-libraries which can be difficult to build natively on Windows. It is highly recommended to run this project using **Windows Subsystem for Linux (WSL)** or by using a **Conda environment**.
+⚠️**Important Note for Windows users:**
+`pyccl` depends on several C libraries and may be difficult to install natively on Windows. Running this project through **WSL2 (Windows Subsystem for Linux)** is strongly recommended.
 
-#### Option 1: Using Conda (Recommended)
-The most stable way to install PyCCL and its dependencies across different operating systems is via `conda-forge`.
+### Installation (Recommended)
 
 ```bash
-# Clone the repository
-git clone [https://github.com/](https://github.com/)<your-username>/IS-cosmology-galaxy-cluster.git
+# Clone the repository:
+git clone https://github.com/<your-github-username>/IS-cosmology-galaxy-cluster.git
 cd IS-cosmology-galaxy-cluster
 
-# Create the environment
+# Create the Conda environment:
 conda env create -f environment.yml
 
-# Activate the environment
+# Activate the environment:
 conda activate cosmo-cluster
 ```
 
-#### Option 2: Using pip (Linux / macOS / WSL)
-If you are on a UNIX-like system (Linux, macOS, or WSL on Windows), you can install the dependencies directly using pip.
+(Optional) Register the environment as a Jupyter kernel:
 
 ```bash
-# Clone the repository
-git clone [https://github.com/](https://github.com/)<your-username>/IS-cosmology-galaxy-cluster.git
-cd IS-cosmology-galaxy-cluster
-
-# Install requirements
-pip install -r requirements.txt
+python -m ipykernel install --user --name cosmo-cluster
 ```
 
-### Verifying the Installation
 
-To verify that PyCCL has been installed correctly, run:
+### Verify the Installation
+
+Run the following command:
 
 ```bash
 python -c "import pyccl; print(pyccl.__version__)"
 ```
 
-If the command prints the installed PyCCL version without errors, the installation was successful.
+If a PyCCL version number is printed without errors, the installation was successful.
+
+---
+
+### Launch JupyterLab
+
+```bash
+jupyter lab
+```
+
+Then select the **cosmo-cluster** kernel when opening the notebooks.
 
 ---
