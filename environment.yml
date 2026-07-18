@@ -4,8 +4,9 @@ channels:
   - defaults
 dependencies:
   - python=3.12.3
-  - pyccl
-  - numpy
+  - pyccl=3.2.1
+  - camb=1.6.5
+  - numpy=1.26.4
   - scipy
   - matplotlib
   - jupyterlab
