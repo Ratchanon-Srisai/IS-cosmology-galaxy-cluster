@@ -55,7 +55,7 @@ The full analysis was tested under:
 
 ```bash
 # Clone the repository:
-git clone https://github.com/<your-github-username>/IS-cosmology-galaxy-cluster.git
+git clone https://github.com/Ratchanon-Srisai/IS-cosmology-galaxy-cluster.git
 cd IS-cosmology-galaxy-cluster
 
 # Create the Conda environment:
