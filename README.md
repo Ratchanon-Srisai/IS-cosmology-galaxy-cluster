@@ -35,11 +35,13 @@ The following effects are not included:
 - Full Bayesian sampling methods (e.g. MCMC)
 
 ## Requirements
-This project was developed using:
-- `pyccl (3.2.1)` 
-- `numpy (2.4.0)`
+This project was tested using:
+- `pyccl (3.2.1)`
+- `camb (1.6.5)`
+- `numpy (1.26.4)`
 - `scipy`
 - `matplotlib`
+
 
 The full analysis was tested under:
 - `Ubuntu (WSL2)`
